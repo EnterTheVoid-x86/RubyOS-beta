@@ -18,6 +18,7 @@ def os_start
   require 'time'
   puts "Time module loaded.".colorize(:green)
   require 'fileutils'
+  require 'yaml'
   puts "RubyFS: Init filesystem".colorize(:green)
   puts "RubyFS: Mount /".colorize(:green)
   puts "RubyFS: Mount /example_programs".colorize(:green)
