@@ -1,6 +1,6 @@
 run = ["bundle", "exec", "ruby", "ruby/RubyOS.rb"]
 
-entrypoint = "ruby/RubyOS.rb"
+entrypoint = "RubyOS.rb"
 
 [packager]
 language = "ruby"
