@@ -26,6 +26,5 @@ if ARGV[0] == "-i" or ARGV[0] == "--info"
   exit
 end
 
-require "fileutils"
 puts "Starting RubyOS..."
-exec "bundle exec ruby main.rb"
+exec "bundle exec ruby system/RubyOS/main.rb"

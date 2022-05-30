@@ -1,4 +1,4 @@
-run = ["bundle", "exec", "ruby", "ruby/RubyOS.rb"]
+run = ["bundle", "exec", "ruby", "RubyOS.rb"]
 
 entrypoint = "RubyOS.rb"
 

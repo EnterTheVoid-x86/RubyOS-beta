@@ -85,6 +85,7 @@ def main
   elsif input == "date"
     date
   elsif input == "shutdown"
+    puts "Shutting down..."
     exit
   elsif input == "time"
     time
@@ -124,7 +125,7 @@ def main
     puts "Enter file name to be deleted"
     file = gets.chomp
     system "rm #{file}"
-  elsif input == "ls"
+  elsif input == "ls" or input == "dir"
    system "ls"
   elsif input == "cd"
     puts "Enter directory name"
@@ -395,9 +396,9 @@ def games
 end
 
 def numguess
-  puts "Welcome to Number Guess!"
-  random_number = rand(1..100)
-  puts "I'm thinking of a number between 1 and 100."
+  puts "Welcome to NumbeGuess!"
+  random_number = rand(1..40)
+  puts "I'm thinking of a number between 1 and 40."
   puts "Try to guess it!"
   puts "You have 4 tries."
   puts "What is your first guess?"
@@ -504,12 +505,8 @@ rescue Interrupt
  retry
 rescue NoMethodError
   retry
-rescue SystemExit
-  puts "Shutting down..."
-  exit
+  end
 end
-end
-
 def passprompt
   begin
     loop do
